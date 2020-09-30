@@ -3,7 +3,8 @@ import dotenv from 'dotenv/config'
 
 export default async (req, res) => {
   try {
-    alert('dsd '+req.method);
+    console.log('req -> ', req.method);
+    console.log(req);
     if(req.method !== 'POST') throw new Error('The method is wrong. Please change to POST.');
 
     const transport: any = nodemailer.createTransport({
