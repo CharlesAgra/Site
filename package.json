@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
-  },
+    "start": "next start",
+    "heroku-postbuild": "npm run build"
+  }, 
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/data-grid": "^4.0.0-alpha.6",
@@ -29,8 +30,5 @@
   },
   "browser": {
     "child_process": false
-  },
-  "engines": {
-    "node": "14.x"
   }
 }
