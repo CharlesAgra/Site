@@ -29,5 +29,8 @@
   },
   "browser": {
     "child_process": false
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
