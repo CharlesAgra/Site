@@ -1,5 +1,5 @@
 .container {
-  max-width: 36rem;
+  max-width: 70rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
 }
@@ -22,4 +22,45 @@
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+.containerheader {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containermenu {
+  list-style-type: none;
+  display: flex;
+}
+
+.containermenuitem {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.2rem;
+}
+
+.brand {
+  text-decoration: none;
+  color: rgba(69,69,69,.8);
+  font-weight: bold;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.menuitem {
+  text-decoration: none;
+  color: rgba(31,31,31,.77);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.menuitem:hover {
+  text-decoration: none;
+  color: darkgrey;
 }
