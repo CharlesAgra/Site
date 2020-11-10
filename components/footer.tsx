@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { StylesProvider } from '@material-ui/core'
 import styles from './footer.module.css'
 
 function Footer() {

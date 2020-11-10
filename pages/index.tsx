@@ -6,18 +6,18 @@ import utilStyles from '../styles/utils.module.css'
 export default function Index() {
   return (
     <>
-      <Layout/>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Desenvolvedor Backend Jr</p>
-        <p>Bacharelado em Ciência da Computação. Gosto de música, livros e futebol.</p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <p>Feito com 💜 | <a href="https://github.com/CharlesAgra/" target="_blank\">Charles Agra</a></p>
-      </section>
-      <Footer/>
+      <div style={{ width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+        <Layout/>
+        <Head> <title>{ siteTitle }</title> </Head>
+
+        <section style={{ width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', textAlign: 'center'}} className={utilStyles.headingMd}>
+          <p>Desenvolvedor Backend Jr</p>
+          <p>Bacharelado em Ciência da Computação. Gosto de música, livros e futebol.</p>
+          <p>Feito com 💜 | <a href="https://github.com/CharlesAgra/" target="_blank\">Charles Agra</a></p>
+        </section>
+      
+        <Footer />
+      </div>
     </>
   )
 }

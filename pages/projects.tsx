@@ -28,13 +28,13 @@ export default function Projects() {
 
     return (
         <>
-            <Layout/>
-            <Head>
-              <title>{siteTitle}</title>
-            </Head>
-            <h2 style={{ textAlign: 'center' }}>SOFTWARE REPOSISORY</h2>
-            <Table data={repo}></Table>
-            <Footer></Footer>
+            <div style={{ width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                <Layout/>
+                <Head> <title>{siteTitle}</title> </Head>
+                <h2 style={{ textAlign: 'center' }}>SOFTWARE REPOSISORY</h2>
+                <Table data={repo}/>
+                <Footer/>
+            </div>
         </>
     )
 }
