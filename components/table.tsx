@@ -11,7 +11,7 @@ const columns = [
 export default function Table(props) {
   return (
 	<>
-		<div style={{ height: '100%', width: '100%'}}>
+		<div style={{ height: '100vh', width: '100%'}}>
 			<div style={{ height: '80%', width: '60%', margin: 'auto'}}>
 				<DataGrid rows={props.data} columns={columns} pageSize={5} />
 			</div>
