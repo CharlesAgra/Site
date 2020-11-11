@@ -32,7 +32,8 @@ export default function Projects() {
                 <Layout/>
                 <Head> <title>{siteTitle}</title> </Head>
                 <h2 style={{ textAlign: 'center' }}>SOFTWARE REPOSISORY</h2>
-                <Table data={repo}/>
+				<Table data={repo}/>
+				<p style={{ marginBottom: '0.5%' }}></p>
                 <Footer/>
             </div>
         </>
